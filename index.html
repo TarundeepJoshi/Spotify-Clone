@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="16x16" type="image/png"
+        href="https://open.spotifycdn.com/cdn/images/favicon16.1c487bff.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <title>Spotify Clone</title>
+</head>
+
+<body>
+
+    <div class="container flex bg-black m-1">
+
+        <!-- LEFT SIDE MAIN CONTAINER -->
+        <div class="left-side border rounded">
+            <div class="home bg-grey rounded p-1">
+                <div class="left-nav">
+                    <div class="closeButton">
+                        <img class="close" style="filter: invert(1);" src="img/close.svg" alt="">
+                    </div>
+                    <ul>
+                        <li style="margin-bottom: 1rem; color: white;"><img class="invert" src="img/home.svg"
+                                alt="home">Home</li>
+                        <li><img class="invert" src="img/search.svg" alt="search">Search</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="library bg-grey rounded p-1">
+                <ul>
+                    <li><img class="invert" src="img/library.svg" alt="library">Your Library</li>
+                </ul>
+
+                <div class="songList">
+                    <ol>
+
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+        <!-- LEFT SIDE MAIN CONTAINER -->
+
+        <!-- RIGHT SIDE MAIN CONTAINER -->
+        <div class="right-side border rounded bg-grey p-1">
+
+            <!-- HEADER -->
+            <div class="right-side-header">
+                <div class="header-buttons">
+                    <div class="nav">
+                        <div class="hamburgerButton">
+                            <img style="filter: invert(1);" class="hamburger" src="img/hamburger.svg" alt="">
+                        </div>
+                        <ul>
+                            <li>
+                                <img class="invert" src="/img/header-left.svg" alt="previous">
+                            </li>
+                            <li>
+                                <img class="invert" src="/img/header-right.svg" alt="next">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right-side-buttons">
+                    <div class="premium-btn"><button>Explore Premium</button></div>
+                    <div class="app"><button>Install App</button></div>
+                    <div class="bell-icon">
+                        <ul>
+                            <li><img class="invert" src="/img/notification.svg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- HEADER -->
+
+            <!-- GRID UPPER-PLAYLIST -->
+            <div class="first-grids-albums">
+                <div class="recommend">
+                    <img width="50px" loading="lazy"
+                        src="https://mosaic.scdn.co/640/ab67616d00001e021d1cc2e40d533d7bcebf5daeab67616d00001e02b47eb88571640ed71dd2fd47ab67616d00001e02d2111da1c38ef582490aa98cab67616d00001e02e62ca3548e739bd85eebbbc9"
+                        alt="">
+                    <h3>My recommend playlist</h3>
+                </div>
+                <div class="allinone">
+                    <img width="50px" loading="lazy"
+                        src="https://mosaic.scdn.co/640/ab67616d00001e0271913d899f72b821f6f35c09ab67616d00001e02bb25239324c4e16ae01fda36ab67616d00001e02d6181999e3c1c1bb525f9989ab67616d00001e02e62ca3548e739bd85eebbbc9"
+                        alt="">
+                    <h3>All in one</h3>
+                </div>
+                <div class="hot-hits">
+                    <img width="50px" loading="lazy"
+                        src="https://i.scdn.co/image/ab67706f00000002118ecaf6c5151716f13fd0b1" alt="">
+                    <h3>Hot Hits Punjabi</h3>
+                </div>
+                <div class="shubh-songs">
+                    <img width="50px" loading="lazy"
+                        src="https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO3ckHLO-default.jpg" alt="">
+                    <h3>Shubh</h3>
+                </div>
+                <div class="punjabi-101">
+                    <img width="50px" loading="lazy"
+                        src="https://i.scdn.co/image/ab67706f000000026eefd1f39c1e1e0834541536" alt="">
+                    <h3>Punjabi 101</h3>
+                </div>
+                <div class="amrinder-gill">
+                    <img width="50px" loading="lazy"
+                        src="https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO0QGAMR-default.jpg" alt="">
+                    <h3>Amrinder Gill</h3>
+                </div>
+            </div>
+            <!-- GRID UPPER-PLAYLIST -->
+
+            <!-- BIGGEST HITS PLAYLIST -->
+            <div class="today-hits">
+                <h1>Today's biggest hits</h1>
+                <div class="card-Container">
+
+                </div>
+            </div>
+            <!-- BIGGEST HITS PLAYLIST -->
+
+            <!-- FOOTER COLUMN -->
+            <div class="footer">
+                <div class="company-links">
+                    <h3>Company</h3>
+                    <ul>
+                        <li>About</li>
+                        <li>Jobs</li>
+                        <li>For the Record</li>
+                    </ul>
+                </div>
+
+                <div class="community-links">
+                    <h3>Communities</h3>
+                    <ul>
+                        <li>For Artists</li>
+                        <li>Developers</li>
+                        <li>Advertising</li>
+                        <li>Investors</li>
+                        <li>Vendors</li>
+                    </ul>
+                </div>
+
+                <div class="useful-links">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Support</li>
+                        <li>Free Mobile App</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-border"></div>
+            <div class="footer-2">
+                <ul>
+                    <li>Legal</li>
+                    <li>Privacy Center</li>
+                    <li>Privacy Policy</li>
+                    <li>Cookies</li>
+                    <li>About Ads</li>
+                    <li>Accessibility</li>
+                </ul>
+            </div>
+            <!-- FOOTER COLUMN -->
+        </div>
+
+        <!-- RIGHT SIDE MAIN CONTAINER -->
+    </div>
+
+    <!-- PLAYBAR-SECTION -->
+    <div class="playbar">
+        <div class="song-details">
+            <img style="filter: invert(1);" id="songImage" src="img/musical-note.png" alt="">
+            <div class="songInfo">
+                <div class="songTitle">Song-Title</div>
+            </div>
+        </div>
+
+        <div class="playbar-buttons">
+            <div class="prevButton"><img id="previous" src="img/previous-btn.svg" alt=""></div>
+            <div class="playButton"><img id="play" src="img/play-button.svg" alt=""></div>
+            <div class="nextButton"><img id="next" src="img/next-btn.svg" alt=""></div>
+        </div>
+
+        <div class="seekbar">
+            <div class="circle">
+            </div>
+        </div>
+        <div class="songtime"> 00:00 / 00:00</div>
+
+
+    </div>
+    <!-- PLAYBAR-SECTION -->
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

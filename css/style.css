@@ -1,0 +1,619 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+/* LEFT SIDE MAIN CONTAINER */
+.left-side {
+    width: 26vw;
+    overflow-y: auto;
+    max-height: 84vh;
+}
+
+.home {
+    margin-bottom: 0.5rem;
+}
+
+.home ul li,
+.library ul li {
+    display: flex;
+    gap: 15px;
+    width: 25px;
+    align-items: center;
+    /* margin: 1rem 0 0 0; */
+    list-style: none;
+    cursor: pointer;
+
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all .3s ease-in;
+    white-space: nowrap;
+}
+
+.home ul li:hover,
+.library ul li:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.home ul li:hover img,
+.library ul li:hover img {
+    filter: invert(1);
+}
+
+.library {
+    min-height: 70vh;
+    position: relative;
+}
+
+.songList ol li {
+    padding: 0.5rem 0.5rem;
+    /* margin-left: 2rem; */
+    color: #b3b3b3;
+    /* gap: 5rem; */
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+
+    border: 1px solid #373737;
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.songList ol li:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.songList ol li img {
+    width: 25px;
+}
+
+
+/* LEFT SIDE MAIN CONTAINER */
+
+/* RIGHT SIDE MAIN CONTAINER */
+.right-side {
+    width: 74vw;
+    overflow-y: scroll;
+    height: 84.3vh;
+}
+
+.right-side-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: static;
+    margin-bottom: 3rem;
+}
+
+.header-buttons ul li,
+.bell-icon ul li {
+    display: inline-flex;
+    gap: 15px;
+    width: 30px;
+    background-color: rgb(48, 48, 48);
+    border-radius: 1rem;
+    padding: 0.4rem;
+    cursor: pointer;
+}
+
+.header-buttons ul li:hover img,
+.bell-icon ul li:hover img {
+    filter: invert(1);
+}
+
+.right-side-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.premium-btn button {
+    border: none;
+    font-weight: 600;
+    padding: 0.4rem;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.premium-btn:hover {
+    transform: scale(1.03);
+}
+
+.app button {
+    border: none;
+    font-weight: 600;
+    padding: 0.4rem;
+    cursor: pointer;
+    background-color: rgb(51, 50, 50);
+    color: white;
+    border-radius: 1rem;
+}
+
+.app:hover {
+    transform: scale(1.03);
+}
+
+/* GRID UPPER-PLAYLIST */
+.first-grids-albums {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    color: white;
+    font-size: 0.75rem;
+}
+
+.recommend,
+.allinone,
+.hot-hits,
+.shubh-songs,
+.punjabi-101,
+.amrinder-gill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    background-color: hsla(0, 0%, 100%, .04);
+    border-radius: 0.3rem;
+    cursor: pointer;
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+
+.recommend:hover,
+.allinone:hover,
+.hot-hits:hover,
+.shubh-songs:hover,
+.punjabi-101:hover,
+.amrinder-gill:hover {
+    background-color: hsla(0, 0%, 100%, .08);
+
+}
+
+.recommend img,
+.allinone img,
+.hot-hits img,
+.shubh-songs img,
+.punjabi-101 img,
+.amrinder-gill img {
+    border-radius: 0.3rem 0 0 0.3rem;
+}
+
+/* .play-btn img {
+    width: 35px;
+    height: 35px;
+    border-radius: 10rem;
+    padding: 0.3rem;
+    background-color: #1ed760;
+}
+
+.play-btn {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+}
+
+.play-btn:hover {
+    transform: scale(1.05);
+}
+
+.play-btn img {
+    display: none;
+}
+
+.recommend:hover .play-btn img,
+.allinone:hover .play-btn img,
+.amrinder-gill:hover .play-btn img,
+.punjabi-101:hover .play-btn img,
+.shubh-songs:hover .play-btn img,
+.hot-hits:hover .play-btn img {
+    display: block;
+} */
+
+/* GRID UPPER-PLAYLIST */
+
+
+/* BIGGEST HITS PLAYLIST */
+.today-hits {
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.today-hits h1 {
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.card-Container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+}
+
+.card {
+    background-color: hsla(0, 0%, 100%, .04);
+    cursor: pointer;
+    border-radius: 0.4rem;
+    transition: all .3s ease-in-out;
+    width: 12.4rem;
+    padding: 1rem;
+    position: relative;
+}
+
+.card:hover {
+    background-color: hsla(0, 0%, 100%, .08);
+}
+
+.card h3 {
+    color: white;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.card p {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.card img {
+    max-width: 100%;
+    background-size: contain;
+    border-radius: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+
+/* .card:hover .play-btn1 img {
+    display: block;
+}
+
+.play-btn1 img {
+    width: 45px;
+    height: 45px;
+    border-radius: 10rem;
+    padding: 0.3rem;
+    background-color: #1ed760;
+}
+
+.play-btn1 {
+    position: absolute;
+    bottom: 5.2rem;
+    right: 1.5rem;
+}
+
+.play-btn1:hover {
+    transform: scale(1.05);
+}
+
+.play-btn1 img {
+    display: none;
+} */
+
+/* BIGGEST HITS PLAYLIST */
+
+/* FOOTER */
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin: 2rem;
+}
+
+.footer h3 {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.footer ul li {
+    list-style: none;
+    margin-bottom: 0.2rem;
+    cursor: pointer;
+}
+
+.footer ul li:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.footer-border {
+    border: 0.1px solid #373737;
+}
+
+.footer-2 ul li {
+    margin-top: 2rem;
+    display: inline-flex;
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.footer-2 ul li:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/* FOOTER */
+
+
+/* PLAYBAR SECTION */
+.playbar {
+    background-color: rgb(24, 24, 24);
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.song-details {
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: -0.4rem;
+    font-size: 1.3rem;
+}
+
+.playbar-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.prevButton img,
+.playButton img,
+.nextButton img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    filter: invert(1);
+}
+
+.prevButton:hover,
+.playButton:hover,
+.nextButton:hover {
+    transform: scale(1.05);
+}
+
+/* PLAYBAR SECTION */
+
+
+/* SEEKBAR-CONTAINER */
+.songtime {
+    text-align: center;
+}
+
+.seekbar {
+    height: 7.5px;
+    width: 35%;
+    background: white;
+    border-radius: 10px;
+    margin: 6px;
+    cursor: pointer;
+}
+
+.circle {
+    width: 13px;
+    height: 13px;
+    border-radius: 13px;
+    background-color: gray;
+    position: relative;
+    bottom: 3px;
+    transition: left 0.2s;
+}
+
+/* SEEKBAR-CONTAINER */
+
+/* RIGHT SIDE MAIN CONTAINER */
+
+/* RESPONSIVENESS SCREEN QUERIES */
+/* FROM (1320PX) TO (1010PX) */
+@media (min-width: 1010px) and (max-width: 1320px) {
+
+    .hamburgerButton,
+    .closeButton {
+        display: none;
+    }
+
+    .songList ol li {
+        text-align: center;
+        font-size: 0.7rem;
+    }
+
+    .songList ol li img {
+        width: 17px;
+    }
+
+    .playbar {
+        padding: 1.5rem;
+    }
+
+    .song-details {
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    .first-grids-albums {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-Container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* FROM (1010PX) TO (630PX) */
+@media (min-width: 630px) and (max-width: 1009px) {
+
+    .header-buttons ul li,
+    .bell-icon ul li {
+        display: none;
+    }
+
+    .left-side {
+        position: absolute;
+        left: -100%;
+        width: 25rem;
+        transition: all .3s;
+        z-index: 1;
+    }
+
+    .right-side {
+        width: 100%;
+    }
+
+    .first-grids-albums {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-Container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .playbar {
+        padding: 0.5rem;
+    }
+
+    .song-details {
+        font-size: 0.8rem;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .playbar {
+        gap: 0.3rem;
+    }
+
+    .songtime {
+        text-align: start;
+    }
+
+    .closeButton img {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+}
+
+/* FROM (630PX) TO (320PX) */
+@media (min-width: 320px) and (max-width: 630px) {
+    .left-side {
+        position: absolute;
+        left: -100%;
+        transition: all .3s;
+        z-index: 1;
+        width: 19rem;
+        max-height: 95vh;
+    }
+
+    .hamburgerButton img {
+        width: 40px;
+    }
+
+    .closeButton img {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .songList ol li {
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    .right-side {
+        width: 100%;
+    }
+
+    .first-grids-albums {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card-Container {
+        align-items: center;
+        overflow-x: scroll;
+    }
+
+    .footer {
+        display: inline;
+        text-align: center;
+    }
+
+    .company-links,
+    .community-links,
+    .useful-links {
+        margin-bottom: 1rem;
+    }
+
+    .footer-2 ul li {
+        display: none;
+    }
+
+    .song-details {
+        font-size: 1rem;
+        align-items: center;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-left: -1rem;
+        font-size: 1.1rem;
+    }
+
+    .seekbar {
+        width: 95%;
+    }
+
+    .playbar {
+        padding: 0.5rem;
+        display: grid;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .playbar-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right-side {
+        height: 78vh;
+    }
+
+    .header-buttons ul li,
+    .bell-icon ul li {
+        display: none;
+    }
+
+    .right-side-buttons {
+        display: inline-grid;
+        gap: 10px;
+    }
+
+    .right-side-header {
+        margin-bottom: 1rem;
+    }
+
+    ::-webkit-scrollbar {
+        height: 7px;
+    }
+}
+
+@media (min-width: 1321px) and (max-width: 2560px) {
+
+    .hamburgerButton,
+    .closeButton {
+        display: none;
+    }
+}
+
+/* RESPONSIVENESS SCREEN QUERIES */
