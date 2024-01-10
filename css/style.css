@@ -145,85 +145,6 @@ body {
     transform: scale(1.03);
 }
 
-/* GRID UPPER-PLAYLIST */
-.first-grids-albums {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    color: white;
-    font-size: 0.75rem;
-}
-
-.recommend,
-.allinone,
-.hot-hits,
-.shubh-songs,
-.punjabi-101,
-.amrinder-gill {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-    background-color: hsla(0, 0%, 100%, .04);
-    border-radius: 0.3rem;
-    cursor: pointer;
-    position: relative;
-    transition: all .3s ease-in-out;
-}
-
-.recommend:hover,
-.allinone:hover,
-.hot-hits:hover,
-.shubh-songs:hover,
-.punjabi-101:hover,
-.amrinder-gill:hover {
-    background-color: hsla(0, 0%, 100%, .08);
-
-}
-
-.recommend img,
-.allinone img,
-.hot-hits img,
-.shubh-songs img,
-.punjabi-101 img,
-.amrinder-gill img {
-    border-radius: 0.3rem 0 0 0.3rem;
-}
-
-/* .play-btn img {
-    width: 35px;
-    height: 35px;
-    border-radius: 10rem;
-    padding: 0.3rem;
-    background-color: #1ed760;
-}
-
-.play-btn {
-    position: absolute;
-    top: 7px;
-    right: 10px;
-}
-
-.play-btn:hover {
-    transform: scale(1.05);
-}
-
-.play-btn img {
-    display: none;
-}
-
-.recommend:hover .play-btn img,
-.allinone:hover .play-btn img,
-.amrinder-gill:hover .play-btn img,
-.punjabi-101:hover .play-btn img,
-.shubh-songs:hover .play-btn img,
-.hot-hits:hover .play-btn img {
-    display: block;
-} */
-
-/* GRID UPPER-PLAYLIST */
-
-
 /* BIGGEST HITS PLAYLIST */
 .today-hits {
     margin-top: 1.5rem;
@@ -273,32 +194,6 @@ body {
     border-radius: 0.4rem;
     margin-bottom: 0.4rem;
 }
-
-/* .card:hover .play-btn1 img {
-    display: block;
-}
-
-.play-btn1 img {
-    width: 45px;
-    height: 45px;
-    border-radius: 10rem;
-    padding: 0.3rem;
-    background-color: #1ed760;
-}
-
-.play-btn1 {
-    position: absolute;
-    bottom: 5.2rem;
-    right: 1.5rem;
-}
-
-.play-btn1:hover {
-    transform: scale(1.05);
-}
-
-.play-btn1 img {
-    display: none;
-} */
 
 /* BIGGEST HITS PLAYLIST */
 
@@ -446,7 +341,7 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .card-Container{
+    .card-Container {
         grid-template-columns: repeat(3, 1fr);
     }
 }
